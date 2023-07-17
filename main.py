@@ -2,7 +2,7 @@ import smtplib
 import datetime as dt
 import random
 
-MY_EMAIL = "kibetnim@gmail.com"
+MY_EMAIL = "youremail"
 PASSWORD = "replacewithyourgoogleapp-password"
 
 
@@ -21,7 +21,7 @@ def motivation():
         connection.starttls()
         connection.login(user=MY_EMAIL, password=PASSWORD)
         connection.sendmail(from_addr=MY_EMAIL,
-                            to_addrs="nmandelakibe@gmail.com",
+                            to_addrs="youremail",
                             msg=f"Subject: Motivation\n\n {read_quotes()}"
                             )
 
